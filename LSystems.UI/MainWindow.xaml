@@ -1,0 +1,33 @@
+﻿<Window x:Class="LSystems.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LSystems.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25px"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="rulesTextBox" Grid.Row="2" AcceptsReturn="True" Background="#FFEAEAEA" Foreground="Black" FontFamily="Consolas" FontSize="14" Panel.ZIndex="999"/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Panel.ZIndex="999">
+            <Button Click="Button_Click">Load</Button>
+            <Button Click="Button_Click_1">Apply</Button>
+            <TextBox x:Name="iterationsBox" Width="97">5</TextBox>
+        </StackPanel>
+        <Canvas x:Name="mainCanvas" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="200" Y="200"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+    </Grid>
+    
+</Window>

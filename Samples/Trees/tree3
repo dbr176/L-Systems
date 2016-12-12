@@ -1,0 +1,8 @@
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.8||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+X->F[2[40X]1X[30X144X][400X]]

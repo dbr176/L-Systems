@@ -1,0 +1,9 @@
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\LSystems.dll.config
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\LSystems.XML
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\LSystems.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\LSystems.pdb
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\FSharp.Core.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\FSharp.Core.xml
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\bin\Release\ru\FSharp.Core.resources.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Release\LSystems.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems\obj\Release\LSystems.pdb

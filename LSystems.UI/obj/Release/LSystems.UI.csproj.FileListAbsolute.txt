@@ -1,0 +1,41 @@
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\LSystems.UI.exe.config
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\LSystems.UI.exe
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\LSystems.UI.pdb
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\FSharp.Core.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\LSystems.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\LSystems.pdb
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\LSystems.xml
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\FSharp.Core.xml
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\bin\Release\ru\FSharp.Core.resources.dll
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.csprojResolveAssemblyReference.cache
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.csproj.LSystems.UI.exe.config
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\MainWindow.g.cs
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\App.g.cs
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI_MarkupCompile.cache
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI_MarkupCompile.lref
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\MainWindow.baml
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.g.resources
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.Properties.Resources.resources
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.csproj.GenerateResource.Cache
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.exe
+C:\Users\darin_k0xwzcj\documents\visual studio 2015\Projects\LSystems\LSystems.UI\obj\Release\LSystems.UI.pdb
+K:\ls\LSystems\LSystems.UI\bin\Release\LSystems.UI.exe.config
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.exe
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.pdb
+K:\ls\LSystems\LSystems.UI\bin\Release\LSystems.UI.exe
+K:\ls\LSystems\LSystems.UI\bin\Release\LSystems.UI.pdb
+K:\ls\LSystems\LSystems.UI\bin\Release\LSystems.dll
+K:\ls\LSystems\LSystems.UI\bin\Release\LSystems.pdb
+K:\ls\LSystems\LSystems.UI\bin\Release\LSystems.xml
+K:\ls\LSystems\LSystems.UI\bin\Release\FSharp.Core.xml
+K:\ls\LSystems\LSystems.UI\bin\Release\ru\FSharp.Core.resources.dll
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.csprojResolveAssemblyReference.cache
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.csproj.LSystems.UI.exe.config
+K:\ls\LSystems\LSystems.UI\obj\Release\MainWindow.g.cs
+K:\ls\LSystems\LSystems.UI\obj\Release\App.g.cs
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI_MarkupCompile.cache
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI_MarkupCompile.lref
+K:\ls\LSystems\LSystems.UI\obj\Release\MainWindow.baml
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.g.resources
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.Properties.Resources.resources
+K:\ls\LSystems\LSystems.UI\obj\Release\LSystems.UI.csproj.GenerateResource.Cache

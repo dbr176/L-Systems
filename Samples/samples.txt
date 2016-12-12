@@ -1,0 +1,198 @@
+SF
+S->|.10||>rotate||.10||>shift x||%0||^i|
+1->|$i||%1||+i||^i|
+F->|' '||'1+XF'||$i||%10||Gi||_||_||?||~pushString|F
+
+F
+F->|'F'||'Y'||%10||%10||Gi||_||_||?|
+
+SA
+S->|.60||>rotate||.200||.200||>pos x||>pos y||.10||>shift x|
+A->+AbA
+b->b
+
+SA
+S->|.90||>rotate||.200||.200||>pos x||>pos y||.10||>shift x|
+A->+AbA
+b->b
+
+SA
+S->|.120||>rotate||.200||.900||>pos x||>pos y||.4||>shift x|
+A->+AbA
+b->b
+
+SA
+S->|.90||>rotate||.200||.900||>pos x||>pos y||.4||>shift x|
+A->+Ab-A
+b->b
+
+SA
+S->|.120||>rotate||.200||.900||>pos x||>pos y||.4||>shift x|
+A->+Ab-A
+b->b
+
+SA
+S->|.120||>rotate||.200||.900||>pos x||>pos y||.4||>shift x|
+A->b+Ab-Abb
+b->bXX
+
+SA
+S->|.10||>rotate||.5||>shift y|
+1->|#rotate||.0.1||+r||>rotate|
+A->[F]--------KKKKKKKKKK[Z]
+F->1X+bF
+Z->1X-bZ
+K->X
+
+SA
+S->|.-0||>rotate||.10||>shift y||%0||>red|
+A->[F][|.5||>rotate|F][|.10||>rotate|F][|.15||>rotate|F]
+F->|#red||%10||+i||>red|-XF
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.9||*r||>shift y||#width||.0.9||*r||>width||#blue||%5||+i||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+X->F[2[0X]1X[0X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+X->F[2[0X]1X[0X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+X->F[2[0X]1X[30X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+X->F[2[0X]1X[30X][00X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.9||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+X->F[2[40X]1X[30X][400X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.8||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+X->F[2[40X]1X[30X][400X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.20||*r|<-
+1->|rr||.0.5||-r||.20||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.8||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+X->F[2[40X]1X[30X144X][400X]]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.8||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|.-5||.5||rrmm|>
+X->5Z[2[40X]1X[30X144X][400X]]
+Z->5F[|.3||>shift y||.-10||.10||rrmm|>5F5F]
+
+SF2F2FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.8||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|rr||.10||*r|<|rr||.10||*r|>
+X->5Z[2[40X]1X[30X144X][400X]]
+Z->5F[|.3||>shift y||.-10||.10||rrmm|>5F5F]
+
+SF25F25FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.8||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|rr||.10||*r|<|rr||.10||*r|>
+X->5Z[2[40X]1X[30X144X][400X]]
+Z->5F[|.3||>shift y||.-10||.10||rrmm|>5F5F]
+
+SF25F5FX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.85||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|rr||.10||*r|<|rr||.10||*r|>
+X->54Z[2[40X]1X[30X144X]]
+Z->5F[|.3||>shift y||.-10||.10||rrmm|>5F5F]
+
+SF25FFX
+S->|.22.5||>rotate||.-20||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.85||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|rr||.10||*r|<|rr||.10||*r|>
+X->54F[2[40[zZ+Z]X]1X[30X14[zZ-Z]4X]]
+Z->5F[|.3||>shift y||.-10||.10||rrmm|>5F5F]
+
+SF25FFX
+S->|.22.5||>rotate||.-25||>shift y||.12||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.87||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%-2||+i||>red||#green||%10||+i||%-5||%5||rimm||+i||>green|
+4->|#width||.0.85||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|rr||.10||*r|<|rr||.10||*r|>
+6->[|.1||>shift y|x|.5||>shift y|H]
+X->54F[2[40[Z+++6]X]1X[30X14[Z---6]4X]]
+Z->5F[|.3||>shift y||.-10||.10||rrmm|>5F5F]
+H->222[5VH]
+
+SF25FFXZ
+S->|.20.5||>rotate||.-25||>shift y||.10||>width||%100||>red||%0||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.82||*r||>shift y||#width||.0.82||*r||>width||#blue||%7||+i||>blue||#red||%2||+i||>red|
+4->|#width||.0.85||*r||>width|
+3->|#red||%10||+i||>red||#blue||%10||>blue|
+5->|rr||.10||*r|<|rr||.10||*r|>
+6->[|.1||>shift y|x|.5||>shift y|H]2
+X->54F[2[40[Z+++6]X]1X[30X14[Z---6]4X]]F2F
+Z->25F[|.3||>shift y||.-10||.10||rrmm|>5F5F]F
+
+VS25FFXZ
+V->|%-100| |^minvar| |%100| |^maxvar| |'|$minvar||$maxvar||rimm||#red||+i||>red||$minvar||$maxvar||rimm||#green||+i||>green|'||^randColor|
+S->|.20.5||>rotate||.-25||>shift y||.10||>width||%100||>red||%50||>green||.200||>pos x||.200||>pos y|
+0->|rr||.0.5||-r||.30||*r|<-
+1->|rr||.0.5||-r||.30||*r|>+
+2->|#shift y||.0.85||*r||>shift y||#width||.0.82||*r||>width||$randColor||!!|
+4->|#width||.0.88||*r||>width|
+5->|rr||.10||*r|<|rr||.10||*r|>
+6->[|.1||>shift y|x|.5||>shift y|H]2
+X->54F[2[40X]1X[30X14]]
