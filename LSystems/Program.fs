@@ -1,6 +1,5 @@
 ﻿namespace LSystems
 
-
 type 't Stack = System.Collections.Generic.Stack<'t>
 
 // F - отрисовывает линию
@@ -86,22 +85,26 @@ type Expression =
             | CharsLine c -> c |> List.toArray |> System.String
 type RuleSet = System.Collections.Generic.Dictionary<char, Expression list>
 
-module Utils = 
 
+module Utils = 
     let undefined _ = failwith "undefined"
 
     open System.IO
+
+    let private culture = System.Globalization.CultureInfo "en"
+    let parseDouble s = System.Double.Parse(s, culture.NumberFormat)
+    let parseInt s =  System.Int32.Parse(s, culture.NumberFormat)
 
     let getExpressions (l : string) =
         let l = l.ToCharArray() |> List.ofArray
         let tocharlst (s : string) = s.ToCharArray() |> List.ofArray
         let f (acc, currstr, inbar, instr) x =
             match x with
-            | '\''  when inbar && not instr     -> acc, currstr + x.ToString(), true, true
+            | '\''  when inbar && not instr     -> acc, currstr + string x, true, true
             | '\''  when inbar && instr         -> acc, currstr, true, false
             | '|'   when inbar && not instr     -> (tocharlst currstr |> CommandLine) :: acc, "", false, false
             | '|'   when not inbar && not instr -> (tocharlst currstr |> CharsLine) :: acc, "|", true, false
-            | _     when inbar                  -> acc, currstr + x.ToString(), inbar, instr
+            | _     when inbar                  -> acc, currstr + string x, inbar, instr
             | _     when not inbar              -> (CharsLine [x]) :: acc, "", inbar, false
             | _                                 -> failwith "impossible!!!"
         let res, _, _, _ = l |> List.fold f ([], "", false, false)
@@ -303,10 +306,10 @@ module Utils =
                             c.Substring 2 |> pushStr
 
                         | _ when starts "|." ->
-                            c.Substring 2 |> System.Double.Parse |> pushDouble
+                            c.Substring 2 |> parseDouble |> pushDouble
 
                         | _ when starts "|%" ->
-                            c.Substring 2 |> System.Int32.Parse |> pushInt
+                            c.Substring 2 |> parseInt |> pushInt
 
                         | _ when starts "|^" ->
                             let name = c.Substring 2
