@@ -49,7 +49,7 @@ type 't Stack = System.Collections.Generic.Stack<'t>
 // |rc| - random color
 // |_|
 
-// {terms} повтрояет выражение
+// {terms} повторяет выражение
 
 // defaults
 // shift, rotate, width, color
@@ -155,6 +155,7 @@ module Utils =
         | DoubleVal of double
         | StringVal of string
         | BoolVal of bool
+        | ColorVal of Color
         | IntVal of int
     
     let equalsCommands a b =
@@ -162,6 +163,7 @@ module Utils =
         | DoubleVal d1, DoubleVal d2 -> d1 = d2
         | StringVal s1, StringVal s2 -> s1 = s2
         | BoolVal b1, BoolVal b2 -> b1 = b2
+        | ColorVal c1, ColorVal c2 -> c1 = c2
         | IntVal i1, IntVal i2 -> i1 = i2
         | _ -> false
 
@@ -204,6 +206,10 @@ module Utils =
                     match workStack.Pop () with
                     | BoolVal b -> b
                     | _ -> failwith ""
+                let getColor () =
+                    match workStack.Pop () with
+                    | ColorVal c -> c
+                    | _ -> failwith ""
 
                 let blue x = let _, _, b = x in b
                 let red x = let r, _, _ = x in r
@@ -212,12 +218,12 @@ module Utils =
 
                 let rand = System.Random ()
                 let wpop () = workStack.Pop ()
-                let wpush x = 
-                    workStack.Push x
+                let wpush x = workStack.Push x
                 let pushDouble = DoubleVal >> wpush
                 let pushInt = IntVal >> wpush
                 let pushStr = StringVal >> wpush
                 let pushBool = BoolVal >> wpush
+                let pushColor = ColorVal >> wpush
 
                 let startsWith (s : string) ss = s.StartsWith ss
 
@@ -302,6 +308,10 @@ module Utils =
                         | _ when starts "|rr" ->
                             rand.NextDouble() |> pushDouble
 
+                        | _ when starts "|rc" ->
+                            let ri _ = rand.Next () % 255
+                            (ri () , ri (), ri ()) |> pushColor
+
                         | _ when starts "|'" ->
                             c.Substring 2 |> pushStr
 
@@ -350,6 +360,10 @@ module Utils =
                         | _ when starts "|#blue" -> currentState.Color |> blue |> pushInt
                         | _ when starts "|#green" -> currentState.Color |> green |> pushInt
                         | _ when starts "|#red" -> currentState.Color |> red |> pushInt
+
+                        | _ when starts "|#color" -> currentState.Color |> pushColor
+                        | _ when starts "|>color" -> 
+                            currentState <- { currentState with Color = getColor () }
 
                         | _ when starts "|#pos x" -> currentState.Position |> fst |> pushDouble
                         | _ when starts "|#pos y" -> currentState.Position |> snd |> pushDouble
