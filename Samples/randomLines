@@ -1,0 +1,8 @@
+S0
+S->|.10||>shift x|
+r->|^dbltmp||$dbltmp||$dbltmp||rr||rr||-r||*r|>|rc||>color|F
+0->[1][2][3][4]
+1->|.5|rrr0
+2->|.90|rrr0
+3->|.180|rrr0
+4->|.270|rrr0
